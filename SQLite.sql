@@ -15,7 +15,7 @@ In this case, you may want to save as a PDF to ensure your formatting remains in
 
 -- Part 1: Yelp Dataset Profiling and Understanding
 
-1. Profile the data by finding the total number of records for each of the tables below:
+-- 1. Profile the data by finding the total number of records for each of the tables below:
 
 SELECT COUNT(*)
 FROM table
@@ -23,7 +23,7 @@ FROM table
 	
 
 
-/*2. Find the total distinct records by either the foreign key or primary key for each table. If two foreign keys are listed in the table, please specify which --foreign key.*/
+-- 2. Find the total distinct records by either the foreign key or primary key for each table. If two foreign keys are listed in the table, please specify which --foreign key.*/
 
 SELECT COUNT(DISTINCT(key))
 FROM table
@@ -36,7 +36,7 @@ FROM table
 
 --3. Are there any columns with null values in the Users table? Indicate "yes," or "no."
 
-	Answer: No
+	-- Answer: No
 	
 	
 -- SQL code used to arrive at answer:
@@ -229,18 +229,18 @@ Answer: No, I am not able to infer anything from the location data because every
 		
 /* 2. Group business based on the ones that are open and the ones that are closed. What differences can you find between the ones that are still open and the ones that are closed? List at least two differences and the SQL code you used to arrive at your answer.
 		
-i. Difference 1:
-Answer: The open businesses have more reviews than the ones that are closed on average.
+-- i. Difference 1:
+-- Answer: The open businesses have more reviews than the ones that are closed on average.
 		
-			Open:   AVG(review_count) is 31.757
-			Closed: AVG(review_count0 is 23.198
+			-- Open:   AVG(review_count) is 31.757
+			-- Closed: AVG(review_count0 is 23.198
          
          
-ii. Difference 2:
-Answer: The average star rating is higher for businesses that are open than businesses that are closed.
+-- ii. Difference 2:
+-- Answer: The average star rating is higher for businesses that are open than businesses that are closed.
 	
-			Open:   AVG(stars) = 3.679
-			Closed: AVG(stars) = 3.520 */
+			-- Open:   AVG(stars) = 3.679
+			-- Closed: AVG(stars) = 3.520 */
          
          
 -- SQL code used for analysis:
